@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Medieval Hemogen Pack Retexture (Continued)</name>
+	<author>Kerbeh</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>JoeOwnage.VRESBloodPatch.Continued</packageId>		
+	<loadAfter>
+		<li>vanillaracesexpanded.sanguophage</li>
+		<li>Finch.Blood</li>
+	</loadAfter>
+	<description>Re-upload of Kerbeh's mod for 1.5 with a few changes. Will apply medieval retexture/rename of VRE Sanguophage hemogen packs if mod is loaded. Will apply medieval retexture/rename of base game hemogen pack if House Sanguin is not loaded.</description>
+</ModMetaData>

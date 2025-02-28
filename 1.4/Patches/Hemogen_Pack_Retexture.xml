@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>  
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Sanguophage</li><!-- vanillaracesexpanded.sanguophage -->
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+
+			<!-- VRE hemogen pack animal -->
+                <li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VRE_HemogenPack_Animal"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Item/HemogenPacks/HemogenAnimalPackMedieval</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VRE_HemogenPack_Animal"]/label</xpath>
+					<value>
+						<label>hemogen bottle (animal)</label>
+					</value>
+				</li>
+
+			<!-- VRE hemogen pack corpse -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VRE_HemogenPack_Corpse"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Item/HemogenPacks/HemogenCorpsePackMedieval</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VRE_HemogenPack_Corpse"]/label</xpath>
+					<value>
+						<label>hemogen bottle (corpse)</label>
+					</value>
+				</li>
+
+			<!-- VRE hemogen pack vampire -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VRE_HemogenPack_Sanguophage"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Item/HemogenPacks/HemogenSanguophagePackMedieval</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VRE_HemogenPack_Sanguophage"]/label</xpath>
+					<value>
+						<label>hemogen bottle (sanguophage)</label>
+					</value>
+				</li>
+
+            </operations>
+        </match>
+    </Operation>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>ↁ House Sanguin [Continued]</li><!-- Finch.Blood -->
+        </mods>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+
+			<!-- hemogen pack Core -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HemogenPack"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Item/HemogenPacks/HemogenPackMedieval</texPath>
+					</value>	
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HemogenPack"]/label</xpath>
+					<value>
+						<label>hemogen bottle</label>
+					</value>
+    			</li>        
+	        </operations>
+        </nomatch>
+    </Operation>
+</Patch>
